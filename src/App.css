@@ -1,10 +1,32 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+#root { 
+  height: 100%;
+}
+
+.resto-app {
+  height: 100%; 
+  font-family: 'Inter', sans-serif;
+}
+
+.resto-page__details {
+  background-color: var(--light-grey);
+}
+
+.resto-page__map {
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
