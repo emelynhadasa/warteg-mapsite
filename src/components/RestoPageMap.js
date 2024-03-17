@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import '../../src/App.css';
-import RestoPlaceImage from './resto-place.png'; 
+import RestoPlaceImage from './restaurant.png'; 
 import { getData } from '../utils/data'; 
 
 function LeafletMap() {
@@ -24,9 +24,22 @@ function LeafletMap() {
     const restaurants = getData();
 
     restaurants.forEach((restaurant) => {
-      const { lat, long, restoName, address } = restaurant;
+      const { lat, long, restoName, address, priceRange, imageUrl } = restaurant;
+
+      // HTML content for the popup
+      const popupContent = `
+        <div style="display: flex; align-items: center;">
+          <img src="${imageUrl}" alt="${restoName}" style="width: 70px; height: 50px; margin-right: 10px;">
+          <div>
+            <b>${restoName}</b><br>
+            <span class="address">${address}</span><br> 
+            <span class="priceRange">${priceRange}</span><br> 
+          </div>
+        </div>
+      `;
+
       const marker = L.marker([lat, long], { icon: customIcon }).addTo(map);
-      marker.bindPopup(`<b>${restoName}</b><br>${address}`).openPopup();
+      marker.bindPopup(popupContent).openPopup();
     });
 
     return () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import RestoList from './RestoList';
 import { getData } from '../utils/data';
-import forkSpoonIcon from './fork-spoon.png'; // Import the icon file
+import forkSpoonIcon from './fork2.png'; 
 
 function RestoPageDetails() {
  const restos = getData();
@@ -9,10 +9,9 @@ function RestoPageDetails() {
  return (
    <div className="resto-page__details">
      <div style={{ display: 'flex', alignItems: 'center' }}>
-       <img src={forkSpoonIcon} alt="Fork Spoon Icon" style={{ width: '40px', height: '40px', marginRight: '10px' }} /> {/* Icon */}
+       <img src={forkSpoonIcon} alt="Fork Spoon Icon" style={{ width: '50px', height: '50px', marginRight: '10px' }} /> {/* Icon */}
        <h1>Restaurant @ Kos PLN</h1>
-     </div>
-     <h3>3 Restaurants</h3>
+     </div><br/>
      <hr />
      <RestoList restos={restos} />
    </div>

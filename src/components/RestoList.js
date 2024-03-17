@@ -7,7 +7,7 @@ function RestoList({ restos }) {
     <Container>
       <Row xs={1} md={3}>
         {restos.map((resto) => (
-          <Col key={resto.id} className="card-col">
+          <Col key={resto.id} className="card-col resto-card">
             <RestoItem {...resto} />
           </Col>
         ))}
