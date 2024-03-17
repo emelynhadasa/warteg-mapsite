@@ -123,6 +123,10 @@ body, html{
   transform: translateY(2px);
 }
 
+.popup-content {
+  font-family: 'Inter', sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

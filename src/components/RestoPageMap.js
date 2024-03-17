@@ -28,7 +28,7 @@ function LeafletMap() {
 
       // HTML content for the popup
       const popupContent = `
-        <div style="display: flex; align-items: center;">
+        <div style="display: flex; align-items: center;" class="popup-content">
           <img src="${imageUrl}" alt="${restoName}" style="width: 70px; height: 50px; margin-right: 10px;">
           <div>
             <b>${restoName}</b><br>
