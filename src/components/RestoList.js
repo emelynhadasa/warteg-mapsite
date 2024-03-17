@@ -1,16 +1,19 @@
 import React from 'react';
 import RestoItem from './RestoItem';
- 
+import { Container, Row, Col } from 'react-bootstrap';
+
 function RestoList({ restos }) {
- return (
-   <div className="resto-list">
-     {
-       restos.map((resto) => (
-         <RestoItem key={resto.id} {...resto} />
-       ))
-     }
-   </div>
- );
+  return (
+    <Container>
+      <Row xs={1} md={3}>
+        {restos.map((resto) => (
+          <Col key={resto.id} className="card-col">
+            <RestoItem {...resto} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
 }
- 
+
 export default RestoList;

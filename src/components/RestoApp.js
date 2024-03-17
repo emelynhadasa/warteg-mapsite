@@ -4,19 +4,14 @@ import RestoPageDetails from './RestoPageDetails';
 import RestoPageMap from './RestoPageMap';
 
 class RestoApp extends React.Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Container fluid>
         <Row>
-          <Col>
+          <Col xs={12} md={6} className="map-container">
             <RestoPageMap />
           </Col>
-          <Col>
+          <Col xs={12} md={6} className="details-container">
             <RestoPageDetails />
           </Col>
         </Row>
