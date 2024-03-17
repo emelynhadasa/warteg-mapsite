@@ -32,12 +32,8 @@ body, html{
   z-index: 0; 
 }
 
-.card {
-  max-width: 100%;
-}
-
-.card-col {
-  align-items: center;
+.resto-page__details {
+  margin: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

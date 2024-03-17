@@ -46,3 +46,4 @@ function RestoPageMap() {
 }
 
 export default RestoPageMap;
+export { LeafletMap };
