@@ -2,20 +2,21 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-//if want to go to border mode: <Card.Img variant="top" src={imageUrl} alt={restoName} /> and undo the border none
-
-function RestoItem({ id, imageUrl, restoName, address, priceRange}) {
-
+function RestoItem({ imageUrl, restoName, address, priceRange }) {
   return (
-    <Card className="card mb-3 resto-item">
-      <Card.Img variant="top" src={imageUrl} alt={restoName} />
-      <Card.Body>
-        <Card.Title>{restoName}</Card.Title>
-        <Card.Text><p className='card-address'>Address: {address}</p></Card.Text>
-        <Card.Text><p className='card-price'>{priceRange}</p></Card.Text>
-        <Button variant="primary" className='card-button show-on-map'>Direct Me</Button>
-      </Card.Body>
-    </Card>
+    <div style={{ position: 'relative' }} className='resto-card'>
+      <Card className="card mb-3 resto-item" style={{ height: '200px', overflow: 'hidden' }}>
+        <Card.Img variant="top" src={imageUrl} alt={restoName} style={{ objectFit: 'cover', height: '100px' }} />
+        <Card.Body style={{ overflowY: 'auto' }}>
+          <Card.Title style={{ marginBottom: '0.5rem' }}>{restoName}</Card.Title>
+          <Card.Text style={{ marginBottom: '0.5rem' }}><p className='card-address'>Address: {address}</p></Card.Text>
+          <Card.Text style={{ marginBottom: '0.5rem' }}><p className='card-price'>{priceRange}</p></Card.Text>
+        </Card.Body>
+      </Card>
+      <Button variant="primary" className='card-button show-on-map' style={{ position: 'absolute', bottom: '-50px', left: '50%', transform: 'translateX(-50%)', zIndex: 1 }}>
+        Direct Me
+      </Button>
+    </div>
   );
 }
 
