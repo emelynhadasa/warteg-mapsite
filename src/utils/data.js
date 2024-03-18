@@ -6,8 +6,8 @@ const getData = () => {
       address: 'Jl. Blk. I Jl. Kp. Dusun Cibeber No.73, Simpangan',
       priceRange: '2k - 30k',
       imageUrl: 'https://img-global.cpcdn.com/recipes/2276d89102cfcb18/680x482cq70/nasi-goreng-pedas-foto-resep-utama.jpg',
-      lat: -6.283967545120102, // latitude
-      long: 107.16781472873973, // longitude (changed from lang to long)
+      lat: -6.283967545120102, 
+      long: 107.16781472873973, 
     },
     {
       id: 2,
