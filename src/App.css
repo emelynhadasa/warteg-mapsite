@@ -44,9 +44,9 @@ body, html{
 .resto-page__details hr {
   margin-top: 2px;
   margin-bottom: 2rem;
-  color: #9c5935;
+  color: #282c34;
   border-radius: 5px;
-  border-width: 3px;
+  border-width: 2px;
 }
 
 .address 
