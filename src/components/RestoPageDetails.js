@@ -9,7 +9,7 @@ function RestoPageDetails() {
  return (
    <div className="resto-page__details">
      <div style={{ display: 'flex', alignItems: 'center' }}>
-       <img src={forkSpoonIcon} alt="Fork Spoon Icon" style={{ width: '50px', height: '50px', marginRight: '10px' }} /> {/* Icon */}
+       <img className="fork-spoon" src={forkSpoonIcon} alt="Fork Spoon Icon" style={{ width: '50px', height: '50px', marginRight: '10px' }} /> 
        <h1>Restaurant @ Kos PLN</h1>
      </div><br/>
      <hr />

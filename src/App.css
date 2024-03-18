@@ -147,6 +147,49 @@ body, html{
   color: #61dafb;
 }
 
+@media (max-width: 576px) {
+  .popup-content {
+    font-size: 10px;
+  }
+
+  .popup-content img {
+    width: 40px;
+    height: 20px;
+  }
+
+  .resto-item {
+    height: 150px !important;
+    width: 8rem;
+  }
+  
+  .card-img-top {
+    height: 70px !important;
+  }
+
+  .card-button {
+    height: 30px;
+    font-size: 15px;
+    left: 25% !important;
+  }
+
+  .resto-card {
+    margin-bottom: 2.5rem;
+  }
+
+  .resto-page__details hr {
+    color: #ffffff;
+  }
+
+  .details-container {
+    left: 46.4%;
+  }
+
+  .fork-spoon,
+  .resto-page__details h1 {
+    display: none;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

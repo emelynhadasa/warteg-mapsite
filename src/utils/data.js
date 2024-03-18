@@ -54,6 +54,33 @@ const getData = () => {
       lat: -6.283531566106364,
       long: 107.16702133394743,
     },
+    {
+      id: 7,
+      restoName: 'Mr. Mie Mi',
+      address: 'Ki Hajar Dewantara Blok 2C/5L, Ruko Citywalk',
+      priceRange: '10k - 50k',
+      imageUrl: 'https://dzglkev4c34xb.cloudfront.net/horego.com/cikarang-utara/restaurant/mr-mie-mi/ambience/af1qipp7p0jlnicwiudgqtuqzngjmi47hxyjbifdwh36.jpg',
+      lat: -6.282167507711954,
+      long: 107.16930031405958,
+    },
+    {
+      id: 8,
+      restoName: 'Warung Mak Yes',
+      address: 'Ki Hajar Dewantara, City Walk Blok 2T',
+      priceRange: '2k - 15k',
+      imageUrl: 'https://media-cdn.yummyadvisor.com/store/53755aff-ffa5-485b-a19d-c9266f8bb7c3.jpg?x-oss-process=style/type_15',
+      lat: -6.282436504568861,
+      long: 107.16953282235886,
+    },
+    {
+      id: 9,
+      restoName: 'Kedai Makan Daun Kelapa',
+      address: 'Ki Hajar Dewantara, City Walk Blok 2P',
+      priceRange: '5k - 25k',
+      imageUrl: 'https://images.tokopedia.net/img/cache/215-square/shops-1/2020/11/14/10156137/10156137_25e20749-7ccd-473b-9193-0d6bb2d3a4d7.jpg',
+      lat: -6.282195387186434,
+      long: 107.16931732739822,
+    },
   ];
 };
 
