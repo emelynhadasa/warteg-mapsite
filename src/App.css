@@ -89,13 +89,13 @@ body, html{
   color: #36395A !important;
   cursor: pointer;
   display: inline-flex;
-  height: 40px;
+  height: 30px;
   justify-content: center;
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
   position: relative;
   text-align: left;
   text-decoration: none;
@@ -105,7 +105,7 @@ body, html{
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 15px !important;
+  font-size: 12px !important;
 }
 
 .card-button:focus {
@@ -124,6 +124,15 @@ body, html{
 
 .popup-content {
   font-family: 'Inter', sans-serif;
+}
+
+.filter-buttons {
+  margin-left: 0.6rem;
+}
+
+.filter-buttons img {
+  width: 2.2rem;
+  padding: 0.2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
