@@ -1,15 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './App.css';
-import RestoApp from './components/RestoApp';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import MyRoutes from './routes/routes'; 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <RestoApp />
-  </React.StrictMode>
+    <Router> 
+      <MyRoutes />
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
-reportWebVitals();

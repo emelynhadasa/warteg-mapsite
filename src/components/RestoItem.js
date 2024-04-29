@@ -1,12 +1,13 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
-function RestoItem({ imageUrl, restoName, address, priceRange, lat, long }) {
+function RestoItem({ imageUrl, restoName, address, priceRange, lat, long, id }) {
   const handleDirectMe = () => {
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${long}&travelmode=driving`;
     window.open(googleMapsUrl, '_blank');
   };
+
+  const panoramaUrl = `http://localhost/panorama_${id}/index.html`;
 
   return (
     <div style={{ position: 'relative' }} className='resto-card'>
@@ -19,12 +20,12 @@ function RestoItem({ imageUrl, restoName, address, priceRange, lat, long }) {
         </Card.Body>
       </Card>
       <div className='resto-item-button'>
-        <Button variant="primary" className='card-button show-on-map' style={{ position: 'absolute', bottom: '-50px', left: '26%', transform: 'translateX(-50%)', zIndex: 1 }} onClick={handleDirectMe}>
+        <button className='card-button show-on-map' style={{ position: 'absolute', bottom: '-50px', left: '26%', transform: 'translateX(-50%)', zIndex: 1 }} onClick={handleDirectMe}>
           View Route
-        </Button>
-        <Button variant="primary" className='card-button show-on-map' style={{ width: '4.4rem', position: 'absolute', bottom: '-50px', left: '77%', transform: 'translateX(-50%)', zIndex: 1 }}>
+        </button>
+        <a href={panoramaUrl} className='card-button show-on-map' style={{ width: '4.4rem', position: 'absolute', bottom: '-50px', left: '77%', transform: 'translateX(-50%)', zIndex: 1 }}>
           Panorama
-        </Button>
+        </a>
       </div>
     </div>
   );

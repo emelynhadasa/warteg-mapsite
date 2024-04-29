@@ -6,6 +6,7 @@ import RestoPlaceImage from './restaurant.png';
 import { getData } from '../utils/data'; 
 import 'leaflet-search/dist/leaflet-search.src.css';
 import 'leaflet-search';
+import 'leaflet.browser.print/dist/leaflet.browser.print';
 
 function LeafletMap() {
   const mapRef = useRef(null);
@@ -145,6 +146,14 @@ function LeafletMap() {
       });
 
       searchControl.addTo(map);
+
+      const browserPrintControl = L.control.browserPrint({
+        position: 'topright',
+        title: 'Print Map',
+        printModes: ['Portrait', 'Landscape'],
+      });
+
+      browserPrintControl.addTo(map);
 
       return () => {
         map.remove();
